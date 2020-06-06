@@ -1,0 +1,21 @@
+.traductor-col {
+  background-color: #0c2027;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.traductor-col .card {
+  border: none;
+}
+
+.traductor-col .card-header {
+  background-color: #0c2027;
+  color: #fff;
+  border-bottom: 1px solid #f09e0a;
+}
+
+.traductor-col .card-footer,
+.traductor-col .card-body  {
+  background-color: #0c2027;
+  color: #fff;
+}
