@@ -3,22 +3,42 @@
 
     <div class="card col-lg-6 px-0">
         <div class="card-header">
-            <h1 class="h5">Traductor Alfa a numerico</h1>
+            <h1 class="h5">DigiTranslator</h1>
         </div>
         <div class="card-body">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h4 class="card-title h5 text-primary">Tu texto natural:</h4>
-                    <textarea class="form-control" rows="8" [(ngModel)]="textoBase" name="textoBas" placeholder="Escribe algo"></textarea>
+                  <div class="subtitle-wrapper">
+                    <h4 class="card-title h5 text-primary">Tu texto en humano:</h4>
+                    <button (click)="pasteFromClipboard()" title="Pegar">
+                      <i class="fa fa-clipboard" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <textarea class="form-control" rows="8" [(ngModel)]="textoBase" name="textoBas" placeholder="Escribe algo"></textarea>
                 </div>
                 <div class="col-12 col-md-6 mt-3 mt-md-0">
-                    <h4 class="card-title h5 text-success">Tu texto numerico:</h4>
+                    <div class="subtitle-wrapper">
+                      <h4 class="card-title h5 text-success">Tu texto numerico:</h4>
+                      <button (click)="copyToClipboard()" title="Copiar">
+                        <i class="fa fa-clone" aria-hidden="true"></i>
+                      </button>
+                    </div>
                     <textarea #textoTrad class="form-control" rows="8" name="textoTrad">{{ textoBase | traductor }}</textarea>
                 </div>
             </div>
         </div>
-        <div class="card-footer text-right">
-            <p>Creado por <a href="https://chemaalfonso.com" target="_blank" class="text-warning">Chema Alfonso</a></p>
+        <div class="card-footer">
+          <div class="social-icons">
+            <a href="https://github.com/ChemaAlfonso/DigiTranslator" target="_blank">
+              <button>
+                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+              </button>
+            </a>
+          </div>
+          <div class="copy">
+            <p class="mb-0">Creado por <a href="https://chemaalfonso.com" target="_blank" class="text-warning">Chema Alfonso</a></p>
+          </div>
+
         </div>
     </div>
 

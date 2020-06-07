@@ -19,3 +19,53 @@
   background-color: #0c2027;
   color: #fff;
 }
+
+.traductor-col .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+}
+
+
+.subtitle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: .3rem;
+
+  & > button {
+    background-color: transparent;
+    color: #f09e0a;
+    border: none;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:focus {
+      outline: 3px auto #f09e0a;
+    }
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: .3rem;
+
+  &  button {
+    background-color: transparent;
+    color: #f09e0a;
+    border: none;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:focus {
+      outline: 3px auto #f09e0a;
+    }
+  }
+}
